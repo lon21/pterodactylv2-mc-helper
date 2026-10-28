@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "psr-4": {
+            "McHelper\\": "src/"
+        }
+    },
+    "config": {
+        "autoloader-suffix": "McHelperExtension"
+    }
+}

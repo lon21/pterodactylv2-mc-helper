@@ -1,0 +1,32 @@
+{
+	"$schema": "./node_modules/@pterodactyl/sdk/manifest.schema.json",
+	"id": "mc-helper",
+	"name": "Minecraft Helper",
+	"version": "1.0.0",
+	"author": "lon21",
+	"description": "Simple addon to help manage minecraft players",
+	"autoload": {
+		"McHelper\\": "src/"
+	},
+	"requires": {
+		"panel": "^2.0.0-dev",
+		"sdk": ">=2.0.0-beta.6 <3.0",
+		"php": "^8.3"
+	},
+	"provider": "McHelper\\McHelperProvider",
+	"ui": {
+		"entry": "dist/client.js",
+		"mode": "native",
+		"prefix": "mchl",
+		"screens": [
+			{
+				"id": "main",
+				"area": "server",
+				"path": "mc-helper",
+				"nav": {
+					"label": "Players"
+				}
+			}
+		]
+	}
+}
